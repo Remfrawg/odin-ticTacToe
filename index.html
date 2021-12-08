@@ -10,8 +10,27 @@
 </head>
 <body>
     <h1>Welcome to TicTacToe</h1>
+    <h2 id = "playerTurn">Select Player Names</h2>
     <div id = "gameContainer">
     </div>
     <div id = "Score"></div>
+    <div id = "bgModal">
+        <div id="modalContent">
+            <div id = "playerNameForm">
+                <h3>Player Names</h3>
+                <input type="text" id = "player1name" placeholder="Player 1">
+                <input type="text" id = "player2name" placeholder="Player 2">
+                <button id = "submitStart">CONFIRM</button>
+            </div>
+        </div>
+    </div>
+    <div id="bgCloseForm">
+        <div id = "closeForm">
+            <h3>Would you like to play again?</h3>
+            <button id = "resetButton">Play Again</button>
+            <button id = "newPlayers">Reset All</button>
+            <button id = "exit">Exit</button>
+        </div>
+    </div>
 </body>
 </html>
