@@ -114,9 +114,10 @@ var gameLogic = (function (){
             let _currentPlayer = _whoseTurn();
              _currentPlayer.addNewMove(index);
              gameBoard.addPlay(index, _currentPlayer.playerVal);
-             _checkWin(_currentPlayer, index);
+             if (counter >=5){_checkWin(_currentPlayer, index)};
              if ((player1.getMoves().length + player2.getMoves().length) >=9 && playing == true){
-                 alert("tie!");
+                alert("tie! you both suck!");
+                gameBoard.closeOptions();
              };
              gameBoard.changeTurnCard(_nextPlayer.name);
              _nextPlayer = _currentPlayer;
