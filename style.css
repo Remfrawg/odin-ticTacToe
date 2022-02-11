@@ -5,7 +5,10 @@ body{
     flex-direction: column;
     align-items: center;
     font-family: 'Courier New', Courier, monospace;
+    overflow: visible;
+    
 }
+
 button, input{
     font-family: 'Courier New', Courier, monospace;
 }
@@ -34,11 +37,16 @@ background: tan
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0, 0.7);
-    position: absolute;
-    top:0;
+    position: fixed;
+    top:0px;
+    bottom: 0;
+    left: 0px;
+    right: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: visible;
 }
 
 #modalContent{
@@ -51,6 +59,7 @@ background: tan
     background-color: white;
     position: relative;
 }
+
 
 .startForm{
     margin-top: 10px;

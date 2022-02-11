@@ -156,6 +156,3 @@ var gameLogic = (function (){
         reset,
     }
 })();
-
-
-
